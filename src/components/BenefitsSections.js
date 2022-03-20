@@ -60,10 +60,6 @@ const BenefitsSections = () => {
             <div className='wave-container'>
                 <Lottie 
                     options={defaultOptions}
-                    // height={400}
-                    // width={400}
-                    // isStopped={this.state.isStopped}
-                    // isPaused={this.state.isPaused}
                 />
             </div>
         </div>
