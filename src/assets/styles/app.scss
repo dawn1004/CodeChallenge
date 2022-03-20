@@ -1,0 +1,57 @@
+@import './variables';
+@import "./breakpoints.scss";
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+nav{
+    background-color: $primary-color;
+    display: flex;
+    padding: 2rem 3rem;
+    justify-content: space-between;
+    align-items: center;
+
+    .left, .right{
+        display: flex;
+        ul{
+            display: flex;
+            list-style-type: none;
+            li{
+                margin: 0px 10px;
+                color: $secondary-text;
+                font-weight: 500;
+            }
+            @include media("<=tablet"){
+                display: none;
+            }
+        }
+    }
+
+    .left{
+        a{
+            margin-right: 1rem;
+        }
+    }
+
+    .right{
+        a{
+            margin-left: 1rem;
+        }
+    }
+
+    .humburger-menu{
+        div{
+            width: 30px;
+            height: 3px;
+            background-color: $primary-text;
+            margin: 3px 0px;
+        }
+        display: none;
+        @include media("<=tablet"){
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,68 @@
+@import './variables';
+@import "./breakpoints.scss";
+
+.learnmore-section{
+    background-color: $peach;
+    margin-top: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
+    position: relative;
+    @include media("<=tablet"){
+        flex-direction: column;
+    }
+    .img-container{
+        width: 50rem;
+        @include media("<=tablet"){
+            width: 80%;
+        }
+        img{
+            width: 100%;
+        }
+    }
+
+    .info-container{
+        width: 40rem;
+        padding: 0rem 2rem;
+        @include media("<=tablet"){
+            width: 80%;
+            text-align: center;
+        }
+        h3{
+            font-size: 1.3rem;
+            color: $secondary-text;
+            font-weight: 500;
+            @include media("<=tablet"){
+                font-size: 1.2rem;
+                margin-top: 1.5rem;
+            }
+        }
+        h2{
+            font-size: 2.2rem;
+            color: $primary-text;
+            font-weight: 800;
+            @include media("<=tablet"){
+                font-size: 2rem;
+            }
+        }
+        p{
+            font-size: 1.1rem;
+            margin-top: 2rem;
+            color: $light-text;
+            @include media("<=tablet"){
+                font-size: 1rem;
+                margin-top: 1.5rem;
+            }
+
+        }
+        button{
+            background-color: $orange;
+            border: none;
+            padding: 1rem 5rem;
+            border-radius: .5rem;
+            color: white;
+            margin-top: 2rem;
+        }
+    }
+}
